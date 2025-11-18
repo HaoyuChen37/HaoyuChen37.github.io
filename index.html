@@ -1,4 +1,106 @@
 ---
-layout: home
+layout: single
+title: "Haoyu Chen"
 author_profile: true
 ---
+
+<h2>About Me</h2>
+
+<p>
+I am a third-year undergraduate student at <strong>Westlake University</strong> and a visiting research intern at the 
+<strong>ICON Lab, UC Berkeley</strong>. I work at the intersection of <strong>learning-enhanced autonomous systems</strong>, 
+<strong>structured sensing & estimation</strong>, and <strong>real-world robot learning</strong>.  
+My research focuses on combining physical models (photometric sensing, bearing-strength estimation, observability) 
+with modern generative learning methods (diffusion models, imitation learning, world models) 
+to build autonomous systems that can operate reliably in the real world.
+</p>
+
+<p>
+I enjoy research that blends both <strong>clean theory</strong> and <strongreal systems engineering</strong>, 
+from building multi-robot sensing and communication systems, 
+to designing pseudo-linear estimators, to developing learning-based planners for manipulation and multi-agent tasks.  
+I am applying for <strong>PhD programs in 2026–2027</strong>.
+</p>
+
+
+<hr>
+
+<h2>Research</h2>
+
+<h3>Infra-Swarm: Robust NIR-Based Multi-Robot Swarming (2023–Present)</h3>
+<p><em>WINDY Lab @ Westlake University</em></p>
+<ul>
+  <li>Designed a full near-infrared (940nm) perception system using custom LED emitters, narrowband filters, and four grayscale cameras for 360° sensing.</li>
+  <li>Built a photometric ranging model based on inverse-square law; calibrated using VICON ground truth; achieved centimeter-level accuracy.</li>
+  <li>Developed distributed multi-target EKF tracking + optical UART communication protocol for low-cost inter-robot messaging.</li>
+  <li>Demonstrated real-world flocking, formation transitions, and obstacle-aware coordination at 100 FPS.</li>
+  <li><strong>Target venue:</strong> IEEE Transactions on Automation Science and Engineering (TASE).</li>
+</ul>
+
+<h3>Bearing-Strength Motion Estimation (2024–Present)</h3>
+<p><em>WINDY Lab @ Westlake University</em></p>
+<ul>
+  <li>Proposed a pseudo-linear Kalman filter combining bearing and signal strength through an augmented emitter-power state.</li>
+  <li>Derived observability conditions removing the classical lateral-motion requirement in bearing-only estimation.</li>
+  <li>Built complete real-world evaluation pipeline with grayscale cameras and IR emitters.</li>
+  <li><strong>ICRA resubmission in preparation.</strong></li>
+</ul>
+
+<h3>Learning for Real Robots: IL, Diffusion Models, and World Models (2025–Present)</h3>
+<p><em>ICON Lab @ UC Berkeley</em></p>
+<ul>
+  <li>Developing diffusion-based imitation-learning pipeline for multi-arm planning.</li>
+  <li>Building image-to-latent encoders and visual-conditioned generative models.</li>
+  <li>Working on world-model training for multi-step prediction under uncertainty.</li>
+  <li>Exploring integration of structured sensing (photometric, bearing-strength) into learning-based planners.</li>
+</ul>
+
+<h3>Voice-LLM Vehicle Control System (2023–2024)</h3>
+<p><em>WINDY Lab @ Westlake University</em></p>
+<ul>
+  <li>Integrated Whisper STT + GPT-4 for natural-language vehicle control, achieving 92% intent recognition accuracy.</li>
+  <li>Developed Unity simulation + deployed on physical mobile robots.</li>
+</ul>
+
+<hr>
+
+<h2>Publications</h2>
+
+<ul>
+  <li>
+    <strong>Infra-Swarm: Robust Vision-Based Multi-Robot Swarming via Near-Infrared Spectral Vision</strong><br>
+    Haoyu Chen, Qijin Li, Wanyu Xiang, Yin Zhang, Zian Ning, Shiyu Zhao.<br>
+    <em>Target: IEEE Transactions on Automation Science and Engineering (TASE).</em>
+  </li>
+
+  <li>
+    <strong>A Bearing-Strength Method for Motion Estimation of Unknown Energy Emitters</strong><br>
+    Zian Ning, Haoyu Chen, Yin Zhang, Shiyu Zhao.<br>
+    <em>Submitted to ICRA 2024 (Rejected); under revision.</em>
+  </li>
+</ul>
+
+<hr>
+
+<h2>Selected Projects</h2>
+
+<ul>
+  <li><strong>Diffusion-based Planning for Multi-Robot Manipulation</strong><br>
+    Conditional diffusion policy training with visual latent encoders.
+  </li>
+
+  <li><strong>Photometric Distance Estimation System</strong><br>
+    Multi-sensor fusion + ISP calibration + VICON evaluation.
+  </li>
+
+  <li><strong>Multimodal Vehicle Control via LLMs</strong><br>
+    Natural-language robot control using Whisper + GPT-4.
+  </li>
+</ul>
+
+<hr>
+
+<h2>Contact</h2>
+
+<p>Email: <a href="mailto:chenhaoyu@westlake.edu.cn">chenhaoyu@westlake.edu.cn</a><br>
+Westlake University / ICON Lab @ UC Berkeley</p>
