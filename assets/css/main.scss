@@ -7,3 +7,21 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ========================= */
+/* Haoyu custom overrides    */
+/* ========================= */
+
+/* 拉高顶部带背景图的 hero 区域 */
+.page__hero--overlay {
+  min-height: 520px;  /* 想多高就改这里，比如 400 / 520 / 650 / 70vh */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* 移动端稍微矮一点 */
+@media (max-width: 600px) {
+  .page__hero--overlay {
+    min-height: 360px;
+  }
+}
